@@ -5,8 +5,23 @@
 # (a, e, i, o, u) and finally return this modified string.
 
 def LetterChanges(str)
-  
+  str_new = ""
+  i = 0
+  while i < str.length
+      if  str[i].next == "a" ||
+          str[i].next == "e" ||
+          str[i].next == "i" ||
+          str[i].next == "o" ||
+          str[i].next == "u" ||
+      elsif
+        str_new = str_new + str[i].next
+      end
+    i += 1
+  end 
+  return str_new
 end
+
+LetterChanges("abcd")
                        
 # keep this function call here 
 LetterChanges(STDIN.gets)
